@@ -10,6 +10,21 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
+//= require bootstrap.min
+//= require bootstrap-sprockets
+//= require affix
+//= require alert
+//= require button
+//= require carousel
+//= require collapse
+//= require dropdown
+//= require modal
+//= require popover
+//= require scrollspy
+//= require tab
+//= require tooltip
+//= require transition
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .

@@ -1,0 +1,12 @@
+<div class="fondo-products">
+  <h1>Editar Producto</h1>
+
+  <%= render 'form', product: @product%>
+
+  <div class="inside">
+
+  <%= link_to 'Show', @product, class:'btn btn-success' %>
+  <%= link_to 'Back', products_path, class:'btn btn-danger' %>
+
+  </div>
+</div>

@@ -15,3 +15,129 @@
  *= require_tree .
  *= require_self
  */
+
+ $shadow: 2px 6px 10px #d4d4d4;
+
+ body{
+   font-family: 'Lato', sans-serif;
+ }
+ .container{
+   padding-top: 60px;
+
+   .fondo{
+     background-color: #f8f8f8;
+   }
+   .fondo-products{
+     background-color: #f5ffdd;
+     padding: 2%;
+     h1{
+       font-size: 2.5em;
+     }
+     .top-pro{
+       margin: 10px 0 15px 0;
+     }
+     #notice{
+       color: #08d408;
+      font-weight: bold;
+      font-size: 1.2em;
+     }
+   }
+   .content-st{
+     border: 1px solid #efefef;
+     padding: 15px 0;
+     display: flex;
+     align-items: flex-end;
+
+     &:first-child{
+       border-top-left-radius: 15px;
+       border-top-right-radius: 15px;
+       border-bottom: 0;
+     }
+     &:nth-child(2){
+       border-bottom-left-radius: 15px;
+       border-bottom-right-radius: 15px;
+       border-top: 0;
+
+       div{
+         padding: 20px 15px;
+         h1{
+           font-size: 2em;
+           margin-bottom: 15px;
+         }
+       }
+     }
+   }
+   h1{
+     font-size: 5em;
+     margin: 0;
+     font-weight: bold;
+   }
+   h2{
+     font-size: 1.5em;
+     margin: 10px 0;
+     span{
+       color: #32b500;
+     }
+   }
+   p{
+     font-size: 0.9em;
+   }
+   a.more{
+     background-color: #fff;
+     padding: 10px 25px;
+     display: inline-block;
+     border-radius: 50px;
+     margin: 15px 0;
+     box-shadow: $shadow;
+     color: #32b500;
+   }
+   img{
+     width: 100%;
+   }
+   .about{
+     display: inherit;
+     padding: 5%;
+
+     &:first-child{
+       padding-bottom: 0;
+     }
+     &:nth-child(2){
+       padding-top: 0;
+       div{
+         h1{
+           font-size: 1em;
+           margin-bottom: 5px;
+         }
+       }
+     }
+
+     h1{
+       font-size: 2em;
+       margin-bottom: 10px;
+     }
+   }
+   .single-product{
+     background-color: white;
+     padding: 15px 0;
+     display: flex;
+     align-items: center;
+     margin: 0 0 10px 0;
+
+
+   }
+   a.new{
+     display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+   }
+   .cont-form{
+     margin: 5% 0 0 0;
+     .form-cols{
+       margin-bottom: 10px;
+     }
+   }
+   .inside{
+     margin-top: 15px;
+   }
+
+ }

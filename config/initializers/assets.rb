@@ -8,6 +8,15 @@ Rails.application.config.assets.version = '1.0'
 # Add Yarn node_modules folder to the asset load path.
 Rails.application.config.assets.paths << Rails.root.join('node_modules')
 Rails.application.config.assets.paths << Rails.root.join('vendor', 'stylesheets')
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'stylesheets', 'bootstrap')
+
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'javascripts')
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'javascripts', 'bootstrap')
+
+Rails.application.config.assets.paths << Rails.root.join('vendor', 'images')
+
+Rails.application.config.assets.precompile += %w( *.jpg )
+Rails.application.config.assets.precompile += %w( *.png )
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in the app/assets

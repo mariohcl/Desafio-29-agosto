@@ -1,4 +1,31 @@
-<div class="col-10">
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
-<div>
+<div class="row fondo content-st">
+
+  <div class="col-md-6">
+    <h1>Bienvenidos...</h1>
+    <h2>...Al sitio en donde los Geeks podran tener el <span>físico de Thor</span></h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Incidunt fugiat amet quos commodi, iure reprehenderit expedita,
+      ea ad perferendis voluptatum, error cumque ipsa recusandae hic non vero, quod. Ipsa, dolorum.
+    </p>
+
+    <%= link_to "¿Quieres saber más?", pages_about_path, class: 'more' %>
+
+  </div>
+  <div class="col-md-4">
+    <img src="<%= asset_path 'thor.png' %>">
+  </div>
+
+</div>
+
+<div class="row fondo content-st">
+
+  <div class="col-md-5">
+    <h1>lorem ipsum</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laudantium maiores fugiat, odit perspiciatis nisi esse tempora inventore, illo soluta aliquam molestias iste culpa! Dolorem reprehenderit unde explicabo, numquam autem!</p>
+  </div>
+  <div class="col-md-5">
+    <h1>lorem ipsum</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laudantium maiores fugiat, odit perspiciatis nisi esse tempora inventore, illo soluta aliquam molestias iste culpa! Dolorem reprehenderit unde explicabo, numquam autem!</p>
+  </div>
+
+</div>

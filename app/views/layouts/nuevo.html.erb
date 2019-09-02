@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DesafioJueves</title>
+    <title>DesafioJueves - Products</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap">
-
   </head>
 
   <body class="<%= params[:controller] %>">
 
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -29,18 +27,14 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
             <li class="active"><%= link_to "Home", pages_home_path %></li>
-            <li><%= link_to "About", pages_about_path %></li>
-            <li><%= link_to "Products", products_path %></li>
           </ul>
 
 
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-
     <div class="container">
-      <%= yield %>
+    <%= yield %>
     <div>
-
   </body>
 </html>
